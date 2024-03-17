@@ -1,0 +1,102 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #1e293b;
+  color: #475569;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#signImage {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signsContainer {
+  border: 2px solid #4f46e5;
+  padding: 10px;
+  display: inline-block;
+  min-width: 400px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#signsContainer img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 10px;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#mic {
+  fill: #4f46e5;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+#mic.active {
+  fill: rgb(61, 173, 61);
+  animation: scale 2s infinite;
+}
+
+.green {
+  border: 2px solid rgb(61, 173, 61) !important;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  #signImage,
+  #signsContainer img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  #mic {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* #signsContainer {
+    min-width: 300px;
+    min-height: 300px;
+  } */
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1e293b;
+  color: #94a3b8;
+  text-align: center;
+  padding: 10px 0;
+}
+
+a {
+  color: #e11d48;
+}
