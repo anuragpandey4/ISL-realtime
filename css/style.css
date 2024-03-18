@@ -40,6 +40,9 @@ ul {
 
 img {
   max-width: 100%;
+  /* width: 125px;
+  height: 125px; */
+  margin-top: 20px;
 }
 
 /* Navbar */
@@ -55,6 +58,20 @@ img {
 
 .navbar .logo {
   max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navbar .logo img {
+  max-width: 100px;
+}
+
+.navbar .logo p {
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--clr-slate600);
 }
 
 .navbar .main-menu ul {
@@ -86,7 +103,7 @@ img {
 }
 
 .hero .container {
-  background: url("../images/hero-bg.png") no-repeat;
+  background: url("../images/final-bg-desktop.png") no-repeat;
   background-size: contain;
   background-position: center bottom;
   height: 550px;
@@ -113,8 +130,20 @@ img {
   align-items: center;
 }
 
+.video h3 {
+  margin-bottom: 10px !important;
+}
+
+.video-para {
+  margin-top: 10px;
+  margin-bottom: 20px !important;
+  color: var(--clr-slate400);
+}
+
 .video-preview {
   margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--clr-light);
 }
 
 /* testimonials */
@@ -175,13 +204,13 @@ img {
 }
 
 .faq ul.faq-menu {
-  max-width: 400px;
-  margin: auto;
+  max-width: 300px;
+  /* margin: auto; */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ddd;
-  padding: 10px 20px;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* background: #ddd; */
+  /* padding: 10px 20px; */
   border-radius: 10px;
   font-weight: 800;
   cursor: pointer;
@@ -202,6 +231,11 @@ img {
 /* FOOTER */
 .footer {
   padding: 40px 0;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 100px;
 }
 
 .footer h4 {
@@ -232,6 +266,12 @@ img {
   gap: 30px;
   justify-content: center;
   align-items: center;
+}
+
+.footer .align-image {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .footer .card {
@@ -415,12 +455,17 @@ img {
     display: none;
   }
 
+  .navbar img {
+    width: 75px;
+    height: 75px;
+  }
+
   .navbar .hamburger-button {
     display: block;
   }
 
   .hero .container {
-    background: url("../images/hero-bg-mobile.png") no-repeat;
+    background: url("../images/final-bg-phone.png") no-repeat;
     background-size: 350px 400px;
     background-position: bottom;
     height: 770px;
